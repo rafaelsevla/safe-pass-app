@@ -20,7 +20,9 @@
   </head>
   <body class="<%= controller_name %> <%= action_name %>">
     <%= render(partial: 'shared/flash') %>
-    <%= render(partial: 'shared/navbar') %>
+    <div id="flash">
+      <%= render(partial: 'shared/navbar') %>
+    </div>
     <div class="container">
       <%= yield %>
     </div>
