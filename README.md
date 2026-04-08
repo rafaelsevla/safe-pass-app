@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Cleaning
 
-Things you may want to cover:
+### Remove todos os arquivos compilados de assets
+rails assets:clobber
 
-* Ruby version
+### Remove o cache temporário do Rails e do Sprockets
+rm -rf tmp/cache/assets
 
-* System dependencies
+### Rodar para executar as mudanças de scss
+./bin/dev
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Ou mudanças apenas do rails:
+rails s
