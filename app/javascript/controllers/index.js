@@ -6,5 +6,9 @@ import { application } from "./application"
 
 import ToastController from "./toast_controller"
 application.register("toast", ToastController)
+
 import SearchController from "./search_controller"
 application.register("search", SearchController)
+
+import ClipboardController from "./clipboard_controller"
+application.register("clipboard", ClipboardController)
